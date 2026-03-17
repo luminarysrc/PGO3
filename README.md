@@ -1,2 +1,2 @@
 # PGO3
-class work
+class work for PGO3 lesson
