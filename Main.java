@@ -32,5 +32,23 @@ public class Main {
         System.out.println("\nAfter borrowing and returning:");
         reader1.printData();
         reader2.printData();
+
+        System.out.println("\n--- Library ---");
+        Library library = new Library(5);
+        library.addBook(book1);
+        library.addBook(book2);
+        library.addBook(book3);
+
+        library.printAvailableBooks();
+
+        System.out.println("\nAvailable books count: " + library.countAvailableBooks());
+
+        System.out.println("\nFinding book by title 'Echoes of Tomorrow':");
+        Book foundBook = library.findBookByTitle("Echoes of Tomorrow");
+        if (foundBook != null) {
+            foundBook.printInfo();
+        } else {
+            System.out.println("Book not found.");
+        }
     }
 }
