@@ -11,6 +11,14 @@ public class Reader {
         this.borrowedCount = borrowedCount;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
     public void printData() {
         System.out.println("First name: " + firstName);
         System.out.println("Last name: " + lastName);
