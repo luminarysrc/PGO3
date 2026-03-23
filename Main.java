@@ -18,5 +18,19 @@ public class Main {
         book1.returnBook();
         book2.returnBook();
         book3.returnBook();
+
+        System.out.println("\n--- Readers ---");
+        Reader reader1 = new Reader("John", "Doe", "RD1001", 0);
+        Reader reader2 = new Reader("Jane", "Smith", "RD1002", 2);
+
+        reader1.printData();
+        reader2.printData();
+
+        reader1.increaseBorrowedCount();
+        reader2.decreaseBorrowedCount();
+
+        System.out.println("\nAfter borrowing and returning:");
+        reader1.printData();
+        reader2.printData();
     }
 }
